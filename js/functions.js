@@ -70,9 +70,15 @@ function prestaciones(){
 }
 
 function nuevoSal(){
-	let cant = prompt("Introdusca Nuevo Salario");
+	let cant = prompt("Introduzca Nuevo Salario");
 	//Convertir txt a entero
 	let c = parseInt(cant);
 	emp1.actualizarSal(c);
 	document.getElementById('salario').innerHTML = ""+emp1.darSal();
+}
+function mostarAnt(){
+    alert("El empleado "+emp1.darNom()+" lleva trabajando "+calcularYeards(emp1.fin)+" años");
+}
+function salir(){
+    alert("Gracias por usar nuestra pagina web");
 }
